@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+
+  & img {
+    width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  .details {
+    & h1 {
+      font-size: 40px;
+      margin: 20px 0px;
+    }
+
+    p {
+      color: gray;
+    }
+
+    .preparation {
+      margin-top: 20px;
+      background-color: #f6ede1;
+      padding: 20px;
+      border-radius: 10px;
+
+      & h4 {
+        color: rgb(228, 108, 108);
+        font-size: 20px;
+      }
+
+      & li {
+        list-style: none;
+        display: flex;
+        margin-top: 10px;
+      }
+    }
+
+    & h2 {
+      margin-top: 20px;
+      color: rgb(131, 36, 36);
+    }
+
+    ul {
+      margin-bottom: 20px;
+    }
+
+    ul li {
+      margin-top: 10px;
+      margin-left: 15px;
+      list-style: square;
+    }
+  }
+
+  .instraction {
+    & ol {
+      margin-top: 10px;
+    }
+
+    & ol li {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+  }
+
+  .nutrition {
+    & p {
+      margin-top: 10px;
+    }
+
+    & table {
+      width: 70%;
+      margin: 0 auto;
+      border-collapse:collapse;
+    }
+  }
+
+  table td {
+    color:gray;
+    font-weight:bold;
+    padding:10px;
+    color:gray;
+    border-bottom: 1px solid gray;
+  }
+
+  table td:nth-child(2){
+    color:rgb(183, 70, 70)
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .container{
+    width:100%;
+  }
+}
